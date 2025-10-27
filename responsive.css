@@ -1,0 +1,246 @@
+/* Responsive Styles */
+/* Base Mobile Styles */
+:root {
+    --mobile-padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    /* Hero Section */
+    .hero-content {
+        flex-direction: column-reverse;
+        padding: var(--mobile-padding);
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2rem, 8vw, 3rem);
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: clamp(1rem, 4vw, 1.5rem);
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+
+    .hero-stats {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .stat {
+        flex: 0 0 45%;
+    }
+
+    /* Profile Section */
+    .profile-container {
+        margin: 1rem auto;
+    }
+
+    .profile-photo {
+        width: 250px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    /* Skills Section */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .skill-item {
+        padding: 1.25rem;
+    }
+
+    .skill-icon-wrapper {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Education Timeline */
+    .education-timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item {
+        width: calc(100% - 60px);
+        margin-left: 60px !important;
+    }
+
+    .timeline-item::before {
+        left: -25px !important;
+    }
+
+    /* Contact Cards */
+    .contact-card {
+        padding: 1.25rem;
+        margin: 0.75rem;
+    }
+
+    .contact-value {
+        font-size: 0.9rem;
+        word-break: break-word;
+    }
+
+    /* Section Headers */
+    .section-header {
+        padding: 2rem var(--mobile-padding) 1rem;
+    }
+
+    .section-title {
+        font-size: clamp(1.8rem, 6vw, 2.5rem);
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    /* About Section */
+    .about-container {
+        padding: 1.5rem;
+        margin: var(--mobile-padding);
+    }
+
+    .about-content {
+        gap: 2rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .personal-info-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .interests-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    /* Projects Section */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: var(--mobile-padding);
+    }
+
+    .project-card {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        padding: 1.5rem;
+        margin: var(--mobile-padding);
+    }
+
+    input, textarea {
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+
+    /* Animations */
+    .fade-in {
+        opacity: 1;
+        transform: none;
+    }
+
+    /* General Spacing */
+    .section {
+        padding: 3rem var(--mobile-padding);
+    }
+
+    /* Better Touch Targets */
+    button, 
+    .project-link,
+    .contact-card,
+    .skill-item,
+    .timeline-item {
+        min-height: 44px; /* Minimum touch target size */
+    }
+
+    /* Improved Text Readability */
+    p, .timeline-description, .skill-description {
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 380px) {
+    .hero-title {
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
+    }
+
+    .profile-photo {
+        width: 220px;
+        height: 270px;
+    }
+
+    .stat {
+        flex: 0 0 100%;
+    }
+
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Landscape Mode */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .hero-content {
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .profile-photo {
+        width: 200px;
+        height: 240px;
+    }
+
+    .hero-text {
+        padding: 1rem;
+    }
+}
+
+/* Tablet Optimization */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero-content {
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-container {
+        padding: 2rem;
+    }
+}
+
+/* High-DPI Screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .profile-image {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}

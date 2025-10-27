@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Explore the creative portfolio of Soumya Ranjan Das, a professional graphic designer skilled in Photoshop, Illustrator, and InDesign.">
+    <title>Soumya Ranjan Das — Visual Designer & Creative Artist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="timeline.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- GSAP for smooth animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Smooth scrollbar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.js"></script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-subtitle">Creative Designer</span>
+                <h1 class="hero-title">Soumya Ranjan Das</h1>
+                <div id="typing-text" class="hero-tagline"></div>
+                <p class="hero-description">Transforming ideas into visually stunning designs with a perfect blend of creativity and precision.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="cta-button primary">Explore Work</a>
+                    <a href="#about" class="cta-button secondary">About Me</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-container">
+                    <div class="profile-photo">
+                        <img src="assets/images/profile.jpg" alt="Soumya Ranjan Das" class="profile-image">
+                    </div>
+                    <div class="profile-glow"></div>
+                </div>
+                <div class="floating-elements">
+                    <img src="assets/images/photoshop.svg" alt="Adobe Photoshop" class="floating-icon icon-ps">
+                    <img src="assets/images/illustrator.svg" alt="Adobe Illustrator" class="floating-icon icon-ai">
+                    <img src="assets/images/indesign.svg" alt="Adobe InDesign" class="floating-icon icon-id">
+                    <div class="glow-orb orb-1"></div>
+                    <div class="glow-orb orb-2"></div>
+                    <div class="glow-orb orb-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Expertise</h2>
+                <p class="section-subtitle">Mastering the tools of visual creation</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <img src="assets/images/photoshop.svg" alt="Adobe Photoshop" class="skill-icon">
+                            <span class="skill-abbreviation">Ps</span>
+                        </div>
+                        <h3>Adobe Photoshop</h3>
+                    </div>
+                    <p class="skill-description">Expert in photo manipulation, digital art, and creative compositions</p>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar" data-percent="95">
+                            <div class="skill-bar-fill"></div>
+                        </div>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <img src="assets/images/illustrator.svg" alt="Adobe Illustrator" class="skill-icon">
+                            <span class="skill-abbreviation">Ai</span>
+                        </div>
+                        <h3>Adobe Illustrator</h3>
+                    </div>
+                    <p class="skill-description">Vector graphics, logo design, and brand identity creation</p>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar" data-percent="90">
+                            <div class="skill-bar-fill"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <img src="assets/images/indesign.svg" alt="Adobe InDesign" class="skill-icon">
+                            <span class="skill-abbreviation">Id</span>
+                        </div>
+                        <h3>Adobe InDesign</h3>
+                    </div>
+                    <p class="skill-description">Publication design, layout, and print media expertise</p>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar" data-percent="85">
+                            <div class="skill-bar-fill"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <i class="fas fa-pen-nib skill-icon"></i>
+                        <h3>Logo Design</h3>
+                    </div>
+                    <p class="skill-description">Creating unique and memorable brand identities</p>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar" data-percent="92">
+                            <div class="skill-bar-fill"></div>
+                        </div>
+                        <span class="skill-percentage">92%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section" style="min-height: 100vh; padding: 6rem 2rem;">
+        <div class="section-header" style="margin-bottom: 4rem;">
+            <h2 class="section-title" style="color: #8A2BE2; text-shadow: 0 0 20px rgba(138, 43, 226, 0.5);">Educational Path</h2>
+            <p class="section-subtitle" style="color: #fff; opacity: 0.8;">My academic journey and achievements</p>
+        </div>
+        
+        <div class="education-timeline" style="position: relative; z-index: 1;">
+            <div class="timeline-item" style="background: rgba(18, 18, 18, 0.95); border: 2px solid #8A2BE2;">
+                <div class="timeline-content">
+                    <div class="timeline-year" style="color: #8A2BE2; font-size: 1.5rem; font-weight: bold;">2025 - Present</div>
+                    <h3 class="timeline-degree" style="color: #fff; margin: 1rem 0;">Higher Secondary Education (12th)</h3>
+                    <div class="timeline-school" style="color: #8A2BE2;">Banishree College, Kuanrapur</div>
+                    <p class="timeline-description">
+                        Currently pursuing Higher Secondary Education with dedication and enthusiasm.
+                        Developing strong academic foundation and practical skills.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">2016</div>
+                    <h3 class="timeline-degree">Secondary Education (10th)</h3>
+                    <div class="timeline-school">Garhtorihan High School</div>
+                    <p class="timeline-description">
+                        Successfully completed Secondary Education with distinction.
+                        Built strong foundation in core subjects and participated in various school activities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="section-header">
+            <h2 class="section-title" style="color: #8A2BE2; text-shadow: 0 0 20px rgba(138, 43, 226, 0.5);">Selected Works</h2>
+            <p class="section-subtitle" style="color: #fff; opacity: 0.8;">A curated collection of my creative projects</p>
+        </div>
+        <div class="projects-grid">
+            <!-- Thumbnails 1-24 -->
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 1.png" alt="Thumbnail 1" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 1</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 2.png" alt="Thumbnail 2" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 2</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 3.png" alt="Thumbnail 3" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 3</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 4.png" alt="Thumbnail 4" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 4</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 5.png" alt="Thumbnail 5" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 5</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 6.png" alt="Thumbnail 6" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 6</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 7.png" alt="Thumbnail 7" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 7</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 8.png" alt="Thumbnail 8" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 8</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 9.png" alt="Thumbnail 9" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 9</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 10.png" alt="Thumbnail 10" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 10</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 11.png" alt="Thumbnail 11" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 11</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 12.png" alt="Thumbnail 12" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 12</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 13.png" alt="Thumbnail 13" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 13</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 14.png" alt="Thumbnail 14" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 14</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 15.png" alt="Thumbnail 15" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 15</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 16.png" alt="Thumbnail 16" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 16</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 17.png" alt="Thumbnail 17" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 17</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 18.png" alt="Thumbnail 18" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 18</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 19.png" alt="Thumbnail 19" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 19</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 20.png" alt="Thumbnail 20" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 20</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 21.png" alt="Thumbnail 21" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 21</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 22.png" alt="Thumbnail 22" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 22</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 23.png" alt="Thumbnail 23" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 23</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/Thumbnails/Thumbnail 24.png" alt="Thumbnail 24" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 class="project-title">Thumbnail 24</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-header">
+            <h2 class="section-title" style="color: #8A2BE2; text-shadow: 0 0 20px rgba(138, 43, 226, 0.5);">About Me</h2>
+            <p class="section-subtitle" style="color: #fff; opacity: 0.8;">Creative Designer & Visual Artist</p>
+        </div>
+        
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm a passionate graphic designer specializing in creating visually stunning designs that tell compelling stories. With a keen eye for detail and a love for creativity, I transform ideas into impactful visual experiences.
+                    </p>
+                    <p class="about-description">
+                        Currently pursuing my education while building my skills in digital design, branding, and visual communication. My goal is to create designs that not only look beautiful but also serve their purpose effectively.
+                    </p>
+                </div>
+                
+                <div class="personal-info-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                            <span class="contact-label">Email</span>
+                        </div>
+                        <div class="contact-value">
+                            soumyaranjan.baroda@gmail.com
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                            <span class="contact-label">Phone</span>
+                        </div>
+                        <div class="contact-value">
+                            +91 7377504790
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="contact-label">Location</span>
+                        </div>
+                        <div class="contact-value">
+                            Badagan, Ohala, Puri, Odisha - 752121
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-calendar"></i>
+                            <span class="contact-label">Birthday</span>
+                        </div>
+                        <div class="contact-value">
+                            25 March 2001
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interests-section">
+                    <h3 class="interests-title">My Interests</h3>
+                    <div class="interests-grid">
+                        <div class="interest-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Digital Art</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-camera"></i>
+                            <span>Photography</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-pencil-alt"></i>
+                            <span>Drawing</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Web Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Soumya Ranjan Das | Designed with <i class="fas fa-heart"></i></p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="timeline.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

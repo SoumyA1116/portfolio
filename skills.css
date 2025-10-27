@@ -1,0 +1,118 @@
+/* Skills Section Styles */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.skill-item {
+    background: rgba(18, 18, 18, 0.95);
+    border: 1px solid rgba(138, 43, 226, 0.2);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(138, 43, 226, 0.5);
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.2);
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.skill-icon-wrapper {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(18, 18, 18, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.skill-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.skill-abbreviation {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.skill-header h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.skill-description {
+    color: #999;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.skill-bar-wrapper {
+    position: relative;
+}
+
+.skill-bar {
+    height: 6px;
+    background: rgba(138, 43, 226, 0.2);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    background: #8A2BE2;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+    width: 0;
+    transition: width 1s ease;
+}
+
+.skill-percentage {
+    position: absolute;
+    right: 0;
+    top: -1.5rem;
+    color: #8A2BE2;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-icon-wrapper {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .skill-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .skill-abbreviation {
+        font-size: 0.6rem;
+    }
+}
