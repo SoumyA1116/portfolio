@@ -8,9 +8,6 @@
     flex-direction: column;
     gap: 3rem;
 }
-html {
-  -webkit-text-size-adjust: none;
-}
 
 .education-timeline::before {
     content: '';

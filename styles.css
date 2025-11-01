@@ -38,10 +38,7 @@
     --container-width: 1440px;
     --grid-gap: 2rem;
 }
-html, body {
-  min-width: 1024px;
-  -webkit-text-size-adjust: none;
-}
+
 
 
 /* Dark mode variables */
